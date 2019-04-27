@@ -1,0 +1,33 @@
+{
+  "log_id": 2319415896030674682,
+  "words_result": [
+    {
+      "words": "图等上限1145双倍",
+      "location": {
+        "top": 124,
+        "left": 610,
+        "width": 405,
+        "height": 29
+      }
+    },
+    {
+      "words": "问",
+      "location": {
+        "top": 171,
+        "left": 240,
+        "width": 118,
+        "height": 314
+      }
+    },
+    {
+      "words": "6向右滑动解锁",
+      "location": {
+        "top": 333,
+        "left": 521,
+        "width": 234,
+        "height": 48
+      }
+    }
+  ],
+  "words_result_num": 3
+}

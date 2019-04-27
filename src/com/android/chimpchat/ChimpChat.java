@@ -20,14 +20,16 @@ package com.android.chimpchat;
 import com.android.chimpchat.adb.AdbBackend;
 import com.android.chimpchat.core.IChimpBackend;
 import com.android.chimpchat.core.IChimpDevice;
+import com.lenovo.ScreenCapture.MainWindow;
+import sun.applet.Main;
 
 import java.util.Map;
 import java.util.TreeMap;
 
 /**
  * ChimpChat is a host-side library that provides an API for communication with
- * an instance of Monkey on a device. This class provides an entry point to
- * setting up communication with a device. Currently it only supports communciation
+ * an instance of Monkey on a currentDevice. This class provides an entry point to
+ * setting up communication with a currentDevice. Currently it only supports communciation
  * over ADB, however.
  */
 public class ChimpChat {
@@ -45,7 +47,8 @@ public class ChimpChat {
    * @return a new instance of ChimpChat or null if errors occur during creation
    */
   public static ChimpChat getInstance(Map<String, String> options) {
-    sAdbLocation = options.get("adbLocation");
+    sAdbLocation = MainWindow.DEFINED_ADB_PATH+"/adb";//options.get("adbLocation");
+    System.out.println("backend:"+options.get("backend"));
     IChimpBackend backend = createBackendByName(options.get("backend"));
     if (backend == null) {
       return null;
@@ -86,21 +89,21 @@ public class ChimpChat {
   }
 
   /**
-   * Retrieves an instance of the device from the backend
+   * Retrieves an instance of the currentDevice from the backend
    *
    * @param timeoutMs length of time to wait before timing out
-   * @param deviceId  the id of the device you want to connect to
-   * @return an instance of the device
+   * @param deviceId  the id of the currentDevice you want to connect to
+   * @return an instance of the currentDevice
    */
   public IChimpDevice waitForConnection(long timeoutMs, String deviceId) {
     return mBackend.waitForConnection(timeoutMs, deviceId);
   }
 
   /**
-   * Retrieves an instance of the device from the backend.
-   * Defaults to the longest possible wait time and any available device.
+   * Retrieves an instance of the currentDevice from the backend.
+   * Defaults to the longest possible wait time and any available currentDevice.
    *
-   * @return an instance of the device
+   * @return an instance of the currentDevice
    */
   public IChimpDevice waitForConnection() {
     return mBackend.waitForConnection(Integer.MAX_VALUE, ".*");

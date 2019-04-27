@@ -1,0 +1,60 @@
+{
+  "log_id": 8872894994221551898,
+  "words_result": [
+    {
+      "words": "经验密刷刷",
+      "location": {
+        "top": 29,
+        "left": 1,
+        "width": 121,
+        "height": 28
+      }
+    },
+    {
+      "words": "这020活",
+      "location": {
+        "top": 67,
+        "left": 7,
+        "width": 159,
+        "height": 24
+      }
+    },
+    {
+      "words": "八仙结界一试练",
+      "location": {
+        "top": 132,
+        "left": 0,
+        "width": 163,
+        "height": 29
+      }
+    },
+    {
+      "words": "次数01活度",
+      "location": {
+        "top": 170,
+        "left": 3,
+        "width": 162,
+        "height": 22
+      }
+    },
+    {
+      "words": "周常分享",
+      "location": {
+        "top": 236,
+        "left": 1,
+        "width": 98,
+        "height": 25
+      }
+    },
+    {
+      "words": "次数01跃度",
+      "location": {
+        "top": 273,
+        "left": 8,
+        "width": 158,
+        "height": 22
+      }
+    }
+  ],
+  "words_result_num": 6
+}

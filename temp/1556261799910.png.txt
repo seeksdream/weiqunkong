@@ -1,0 +1,186 @@
+{
+  "log_id": 605307399852759674,
+  "words_result": [
+    {
+      "words": "日常",
+      "location": {
+        "top": 131,
+        "left": 115,
+        "width": 68,
+        "height": 29
+      }
+    },
+    {
+      "words": "?经验系统说明",
+      "location": {
+        "top": 123,
+        "left": 268,
+        "width": 174,
+        "height": 27
+      }
+    },
+    {
+      "words": "服密等上限14级·双倍经验身们",
+      "location": {
+        "top": 112,
+        "left": 607,
+        "width": 517,
+        "height": 45
+      }
+    },
+    {
+      "words": "仙绿任务",
+      "location": {
+        "top": 196,
+        "left": 339,
+        "width": 96,
+        "height": 27
+      }
+    },
+    {
+      "words": "经验喜同别Q",
+      "location": {
+        "top": 190,
+        "left": 808,
+        "width": 205,
+        "height": 33
+      }
+    },
+    {
+      "words": "状g010活认置G20",
+      "location": {
+        "top": 232,
+        "left": 342,
+        "width": 205,
+        "height": 26
+      }
+    },
+    {
+      "words": "状020活玩置020",
+      "location": {
+        "top": 231,
+        "left": 811,
+        "width": 209,
+        "height": 26
+      }
+    },
+    {
+      "words": "奇遇",
+      "location": {
+        "top": 266,
+        "left": 115,
+        "width": 68,
+        "height": 29
+      }
+    },
+    {
+      "words": "灵气任务",
+      "location": {
+        "top": 298,
+        "left": 338,
+        "width": 102,
+        "height": 30
+      }
+    },
+    {
+      "words": "八仙结界一试练Q",
+      "location": {
+        "top": 292,
+        "left": 808,
+        "width": 202,
+        "height": 33
+      }
+    },
+    {
+      "words": "节日",
+      "location": {
+        "top": 336,
+        "left": 117,
+        "width": 65,
+        "height": 27
+      }
+    },
+    {
+      "words": "次020活无",
+      "location": {
+        "top": 336,
+        "left": 341,
+        "width": 188,
+        "height": 21
+      }
+    },
+    {
+      "words": "状01活0H10",
+      "location": {
+        "top": 336,
+        "left": 811,
+        "width": 209,
+        "height": 23
+      }
+    },
+    {
+      "words": "即将开启",
+      "location": {
+        "top": 404,
+        "left": 101,
+        "width": 102,
+        "height": 30
+      }
+    },
+    {
+      "words": "币徒任务",
+      "location": {
+        "top": 402,
+        "left": 348,
+        "width": 87,
+        "height": 24
+      }
+    },
+    {
+      "words": "周常分享",
+      "location": {
+        "top": 401,
+        "left": 808,
+        "width": 99,
+        "height": 27
+      }
+    },
+    {
+      "words": "塑无次活无",
+      "location": {
+        "top": 439,
+        "left": 339,
+        "width": 190,
+        "height": 24
+      }
+    },
+    {
+      "words": "灾塑Q1活度无",
+      "location": {
+        "top": 439,
+        "left": 815,
+        "width": 186,
+        "height": 23
+      }
+    },
+    {
+      "words": "活跃艦",
+      "location": {
+        "top": 594,
+        "left": 104,
+        "width": 90,
+        "height": 24
+      }
+    },
+    {
+      "words": "9进组",
+      "location": {
+        "top": 688,
+        "left": 383,
+        "width": 89,
+        "height": 21
+      }
+    }
+  ],
+  "words_result_num": 20
+}

@@ -1,0 +1,186 @@
+{
+  "log_id": 2207258673561032474,
+  "words_result": [
+    {
+      "words": "经验系统说明",
+      "location": {
+        "top": 124,
+        "left": 303,
+        "width": 134,
+        "height": 27
+      }
+    },
+    {
+      "words": "服务器等级上限11级双倍经验010",
+      "location": {
+        "top": 112,
+        "left": 607,
+        "width": 517,
+        "height": 45
+      }
+    },
+    {
+      "words": "仙缘任务",
+      "location": {
+        "top": 196,
+        "left": 339,
+        "width": 98,
+        "height": 26
+      }
+    },
+    {
+      "words": "经验喜刷刷",
+      "location": {
+        "top": 190,
+        "left": 807,
+        "width": 205,
+        "height": 33
+      }
+    },
+    {
+      "words": "参力",
+      "location": {
+        "top": 213,
+        "left": 602,
+        "width": 54,
+        "height": 24
+      }
+    },
+    {
+      "words": "次数010活跃度020",
+      "location": {
+        "top": 234,
+        "left": 341,
+        "width": 210,
+        "height": 23
+      }
+    },
+    {
+      "words": "次数020活跃度020",
+      "location": {
+        "top": 234,
+        "left": 815,
+        "width": 203,
+        "height": 21
+      }
+    },
+    {
+      "words": "奇遇",
+      "location": {
+        "top": 269,
+        "left": 118,
+        "width": 64,
+        "height": 26
+      }
+    },
+    {
+      "words": "队伍",
+      "location": {
+        "top": 262,
+        "left": 7,
+        "width": 27,
+        "height": 143
+      }
+    },
+    {
+      "words": "灵气任务",
+      "location": {
+        "top": 298,
+        "left": 336,
+        "width": 104,
+        "height": 27
+      }
+    },
+    {
+      "words": "1八仙结界试练",
+      "location": {
+        "top": 275,
+        "left": 793,
+        "width": 265,
+        "height": 58
+      }
+    },
+    {
+      "words": "节日",
+      "location": {
+        "top": 335,
+        "left": 117,
+        "width": 61,
+        "height": 27
+      }
+    },
+    {
+      "words": "次数020活跃度无",
+      "location": {
+        "top": 336,
+        "left": 341,
+        "width": 188,
+        "height": 24
+      }
+    },
+    {
+      "words": "次数01活跃度010",
+      "location": {
+        "top": 335,
+        "left": 811,
+        "width": 209,
+        "height": 24
+      }
+    },
+    {
+      "words": "即将开启",
+      "location": {
+        "top": 402,
+        "left": 102,
+        "width": 98,
+        "height": 30
+      }
+    },
+    {
+      "words": "师徒任务",
+      "location": {
+        "top": 401,
+        "left": 338,
+        "width": 99,
+        "height": 27
+      }
+    },
+    {
+      "words": "次数无限次活跃度无",
+      "location": {
+        "top": 437,
+        "left": 339,
+        "width": 190,
+        "height": 26
+      }
+    },
+    {
+      "words": "次数0/1活跃度无",
+      "location": {
+        "top": 439,
+        "left": 811,
+        "width": 188,
+        "height": 23
+      }
+    },
+    {
+      "words": "出战宠物寿命低于100无法出战,请使用长寿面补充寿命!",
+      "location": {
+        "top": 486,
+        "left": 389,
+        "width": 490,
+        "height": 27
+      }
+    },
+    {
+      "words": "舌跃度",
+      "location": {
+        "top": 596,
+        "left": 131,
+        "width": 62,
+        "height": 23
+      }
+    }
+  ],
+  "words_result_num": 20
+}

@@ -1,0 +1,150 @@
+{
+  "log_id": 1609445731390955834,
+  "words_result": [
+    {
+      "words": "仙缘任务",
+      "location": {
+        "top": 23,
+        "left": 1,
+        "width": 99,
+        "height": 28
+      }
+    },
+    {
+      "words": "经验喜刷刷Q",
+      "location": {
+        "top": 17,
+        "left": 469,
+        "width": 204,
+        "height": 33
+      }
+    },
+    {
+      "words": "参加",
+      "location": {
+        "top": 39,
+        "left": 229,
+        "width": 99,
+        "height": 29
+      }
+    },
+    {
+      "words": "参加",
+      "location": {
+        "top": 40,
+        "left": 745,
+        "width": 53,
+        "height": 26
+      }
+    },
+    {
+      "words": "次数0/10活跃度0/20",
+      "location": {
+        "top": 61,
+        "left": 3,
+        "width": 210,
+        "height": 21
+      }
+    },
+    {
+      "words": "次数0/20活跃度0/20",
+      "location": {
+        "top": 60,
+        "left": 473,
+        "width": 210,
+        "height": 22
+      }
+    },
+    {
+      "words": "灵气任务",
+      "location": {
+        "top": 125,
+        "left": 1,
+        "width": 101,
+        "height": 28
+      }
+    },
+    {
+      "words": "次数0/20活跃度无",
+      "location": {
+        "top": 163,
+        "left": 2,
+        "width": 189,
+        "height": 23
+      }
+    },
+    {
+      "words": "加八仙结界试练.加",
+      "location": {
+        "top": 114,
+        "left": 226,
+        "width": 603,
+        "height": 72
+      }
+    },
+    {
+      "words": "次数0/1活跃度0/10",
+      "location": {
+        "top": 163,
+        "left": 477,
+        "width": 206,
+        "height": 22
+      }
+    },
+    {
+      "words": "师徒任务",
+      "location": {
+        "top": 228,
+        "left": 2,
+        "width": 99,
+        "height": 28
+      }
+    },
+    {
+      "words": "周常分享",
+      "location": {
+        "top": 228,
+        "left": 472,
+        "width": 99,
+        "height": 28
+      }
+    },
+    {
+      "words": "参加",
+      "location": {
+        "top": 247,
+        "left": 275,
+        "width": 52,
+        "height": 23
+      }
+    },
+    {
+      "words": "次数无限次活跃度无",
+      "location": {
+        "top": 267,
+        "left": 3,
+        "width": 188,
+        "height": 22
+      }
+    },
+    {
+      "words": "次数0/1活跃度无",
+      "location": {
+        "top": 266,
+        "left": 473,
+        "width": 189,
+        "height": 22
+      }
+    },
+    {
+      "words": "出战宠物寿命低于100无法出战,请使用长寿面补充寿命!",
+      "location": {
+        "top": 314,
+        "left": 52,
+        "width": 489,
+        "height": 26
+      }
+    }
+  ],
+  "words_result_num": 16
+}

@@ -1,0 +1,60 @@
+{
+  "log_id": 2894006095333289658,
+  "words_result": [
+    {
+      "words": "仙缘任务",
+      "location": {
+        "top": 25,
+        "left": 0,
+        "width": 99,
+        "height": 28
+      }
+    },
+    {
+      "words": "次数0/10活跃度0/20",
+      "location": {
+        "top": 63,
+        "left": 3,
+        "width": 209,
+        "height": 22
+      }
+    },
+    {
+      "words": "灵气任务",
+      "location": {
+        "top": 128,
+        "left": 0,
+        "width": 100,
+        "height": 30
+      }
+    },
+    {
+      "words": "次数0/20活跃度无",
+      "location": {
+        "top": 166,
+        "left": 1,
+        "width": 190,
+        "height": 23
+      }
+    },
+    {
+      "words": "师徒任务",
+      "location": {
+        "top": 231,
+        "left": 1,
+        "width": 98,
+        "height": 27
+      }
+    },
+    {
+      "words": "次数无限次活跃度无",
+      "location": {
+        "top": 270,
+        "left": 3,
+        "width": 187,
+        "height": 23
+      }
+    }
+  ],
+  "words_result_num": 6
+}

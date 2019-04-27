@@ -1,0 +1,60 @@
+{
+  "log_id": 7043111552878344954,
+  "words_result": [
+    {
+      "words": "仙绿任务",
+      "location": {
+        "top": 28,
+        "left": 0,
+        "width": 98,
+        "height": 27
+      }
+    },
+    {
+      "words": "状010活认020",
+      "location": {
+        "top": 65,
+        "left": 0,
+        "width": 210,
+        "height": 23
+      }
+    },
+    {
+      "words": "灵气任务",
+      "location": {
+        "top": 130,
+        "left": 0,
+        "width": 99,
+        "height": 29
+      }
+    },
+    {
+      "words": "次数020活以无",
+      "location": {
+        "top": 168,
+        "left": 0,
+        "width": 190,
+        "height": 25
+      }
+    },
+    {
+      "words": "师徒任务",
+      "location": {
+        "top": 233,
+        "left": 1,
+        "width": 97,
+        "height": 27
+      }
+    },
+    {
+      "words": "次做无限次茫无",
+      "location": {
+        "top": 271,
+        "left": 2,
+        "width": 188,
+        "height": 24
+      }
+    }
+  ],
+  "words_result_num": 6
+}

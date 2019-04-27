@@ -19,6 +19,8 @@ package com.android.chimpchat;
 import com.google.common.collect.Lists;
 
 import com.android.chimpchat.core.PhysicalButton;
+import com.lenovo.ScreenCapture.LuZhiHelper;
+import com.lenovo.ScreenCapture.MainWindow;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -46,25 +48,35 @@ public class ChimpManager {
   private BufferedReader monkeyReader;
 
   /**
-   * Create a new ChimpMananger to talk to the specified device.
+   * Create a new ChimpMananger to talk to the specified currentDevice.
    *
    * @param monkeySocket the already connected socket on which to send protocol messages.
    * @throws IOException if there is an issue setting up the sockets
    */
   public ChimpManager(Socket monkeySocket) throws IOException {
+    System.out.println("ChimpManager on:"+monkeySocket.getPort());
     this.monkeySocket = monkeySocket;
-    monkeyWriter =
-        new BufferedWriter(new OutputStreamWriter(monkeySocket.getOutputStream()));
-    monkeyReader = new BufferedReader(new InputStreamReader(monkeySocket.getInputStream()));
-  }
+    this.init();
 
+  }
+  private void init() throws IOException {
+
+    monkeyWriter = new BufferedWriter(new OutputStreamWriter(this.monkeySocket.getOutputStream()));
+    monkeyReader = new BufferedReader(new InputStreamReader(this.monkeySocket.getInputStream()));
+//    try{
+//      monkeyReader.readLine();
+//    }catch (Exception e){
+//
+//    }
+
+  }
   /**
    * Send a touch down event at the specified location.
    *
    * @param x the x coordinate of where to click
    * @param y the y coordinate of where to click
    * @return success or not
-   * @throws IOException on error communicating with the device
+   * @throws IOException on error communicating with the currentDevice
    */
   public boolean touchDown(int x, int y) throws IOException {
     return sendMonkeyEvent("touch down " + x + " " + y);
@@ -76,7 +88,7 @@ public class ChimpManager {
    * @param x the x coordinate of where to click
    * @param y the y coordinate of where to click
    * @return success or not
-   * @throws IOException on error communicating with the device
+   * @throws IOException on error communicating with the currentDevice
    */
   public boolean touchUp(int x, int y) throws IOException {
     return sendMonkeyEvent("touch up " + x + " " + y);
@@ -88,7 +100,7 @@ public class ChimpManager {
    * @param x the x coordinate of where to click
    * @param y the y coordinate of where to click
    * @return success or not
-   * @throws IOException on error communicating with the device
+   * @throws IOException on error communicating with the currentDevice
    */
   public boolean touchMove(int x, int y) throws IOException {
     return sendMonkeyEvent("touch move " + x + " " + y);
@@ -100,18 +112,18 @@ public class ChimpManager {
    * @param x the x coordinate of where to click
    * @param y the y coordinate of where to click
    * @return success or not
-   * @throws IOException on error communicating with the device
+   * @throws IOException on error communicating with the currentDevice
    */
   public boolean touch(int x, int y) throws IOException {
     return sendMonkeyEvent("tap " + x + " " + y);
   }
 
   /**
-   * Press a physical button on the device.
+   * Press a physical button on the currentDevice.
    *
    * @param name the name of the button (As specified in the protocol)
    * @return success or not
-   * @throws IOException on error communicating with the device
+   * @throws IOException on error communicating with the currentDevice
    */
   public boolean press(String name) throws IOException {
     return sendMonkeyEvent("press " + name);
@@ -122,7 +134,7 @@ public class ChimpManager {
    *
    * @param name the name of the button (As specified in the protocol)
    * @return success or not
-   * @throws IOException on error communicating with the device
+   * @throws IOException on error communicating with the currentDevice
    */
   public boolean keyDown(String name) throws IOException {
     return sendMonkeyEvent("key down " + name);
@@ -133,40 +145,42 @@ public class ChimpManager {
    *
    * @param name the name of the button (As specified in the protocol)
    * @return success or not
-   * @throws IOException on error communicating with the device
+   * @throws IOException on error communicating with the currentDevice
    */
   public boolean keyUp(String name) throws IOException {
     return sendMonkeyEvent("key up " + name);
   }
 
   /**
-   * Press a physical button on the device.
+   * Press a physical button on the currentDevice.
    *
    * @param button the button to press
    * @return success or not
-   * @throws IOException on error communicating with the device
+   * @throws IOException on error communicating with the currentDevice
    */
   public boolean press(PhysicalButton button) throws IOException {
     return press(button.getKeyName());
   }
 
   /**
-   * This function allows the communication bridge between the host and the device
+   * This function allows the communication bridge between the host and the currentDevice
    * to be invisible to the script for internal needs.
    * It splits a command into monkey events and waits for responses for each over an adb tcp socket.
    * Returns on an error, else continues and sets up last response.
    *
-   * @param command the monkey command to send to the device
+   * @param command the monkey command to send to the currentDevice
    * @return the (unparsed) response returned from the monkey.
    */
   private String sendMonkeyEventAndGetResponse(String command) throws IOException {
     command = command.trim();
-    LOG.info("Monkey Command: " + command + ".");
-
+    LuZhiHelper.onCommandExe(command);
     // send a single command and get the response
     monkeyWriter.write(command + "\n");
     monkeyWriter.flush();
-    return monkeyReader.readLine();
+
+    String rst = monkeyReader.readLine();
+//    System.out.println("Monkey Command _rst: " + rst);
+    return rst;
   }
 
   /**
@@ -202,12 +216,12 @@ public class ChimpManager {
   }
 
   /**
-   * This function allows the communication bridge between the host and the device
+   * This function allows the communication bridge between the host and the currentDevice
    * to be invisible to the script for internal needs.
    * It splits a command into monkey events and waits for responses for each over an
    * adb tcp socket.
    *
-   * @param command the monkey command to send to the device
+   * @param command the monkey command to send to the currentDevice
    * @return true on success.
    */
   public boolean sendMonkeyEvent(String command) throws IOException {
@@ -218,7 +232,7 @@ public class ChimpManager {
   }
 
   /**
-   * Close all open resources related to this device.
+   * Close all open resources related to this currentDevice.
    */
   public void close() {
     try {
@@ -239,7 +253,7 @@ public class ChimpManager {
   }
 
   /**
-   * Function to get a static variable from the device.
+   * Function to get a static variable from the currentDevice.
    *
    * @param name name of static variable to get
    * @return the value of the variable, or null if there was an error
@@ -255,7 +269,7 @@ public class ChimpManager {
   }
 
   /**
-   * Function to get the list of static variables from the device.
+   * Function to get the list of static variables from the currentDevice.
    */
   public Collection<String> listVariable() throws IOException {
     synchronized (this) {
@@ -299,7 +313,7 @@ public class ChimpManager {
    * @param y the y coordinate of where to click
    * @return success or not
    * @throws IOException
-   * @throws IOException on error communicating with the device
+   * @throws IOException on error communicating with the currentDevice
    */
   public boolean tap(int x, int y) throws IOException {
     return sendMonkeyEvent("tap " + x + " " + y);
@@ -345,7 +359,7 @@ public class ChimpManager {
   }
 
   /**
-   * Wake the device up from sleep.
+   * Wake the currentDevice up from sleep.
    *
    * @throws IOException
    */
